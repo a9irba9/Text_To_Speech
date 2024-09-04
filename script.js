@@ -20,7 +20,7 @@ async function submit() {
         return;
     }
 
-    let speak = await fetch('https://api.streamelements.com/kappa/v2/speech?voice=Amy&text=' + encodeURIComponent(text.trim()));
+    let speak = await fetch('https://api.streamelements.com/kappa/v2/speech?voice=en-AU-Wavenet-C&text=' + encodeURIComponent(text.trim()));
 
     if (speak.status != 200) {
         alert(await speak.text());

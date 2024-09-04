@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natural Text to Speech</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="view">
+        <h3>Natural Text to Speech</h3>
+        <textarea id="text" rows="15" cols="80" maxlength="500" placeholder="Enter text here..."></textarea>
+        <br />
+        <audio id="audio" controls="">
+            <source id="source" type="audio/wav" />
+        </audio>
+        <br />
+        <button type="submit" id="button">PLAY</button>
+        <br />
+        Number of Characters: <span id="message">0</span>
+        <br />
+        <br />
+        <hr />
+        <br />
+        <a href="https://github.com/5E7EN/TTS-Emulator" target="_blank">(Source Code)</a>
+    </div>
+</body>
+</html>
